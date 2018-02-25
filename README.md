@@ -1,0 +1,2 @@
+-Added Spring Boot support
+-Added envPC properties file and Properties Bean initialization
