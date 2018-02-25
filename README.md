@@ -3,3 +3,4 @@
 -Added Java EE API and EJB support
 -Added EJB implementation
 -Added Rest Template support
+-Added Mensajeria Service implementation

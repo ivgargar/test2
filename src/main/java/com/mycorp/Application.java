@@ -9,6 +9,8 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.web.client.RestTemplate;
 
 import com.mycorp.ejb.PortalClientesWebEJBRemoteBean;
+import com.mycorp.service.impl.MensajeriaServiceImpl;
+import com.mycorp.support.MensajeriaService;
 
 import portalclientesweb.ejb.interfaces.PortalClientesWebEJBRemote;
 
@@ -33,5 +35,10 @@ public class Application {
 	@Bean
 	public RestTemplate restTemplateUTF8(RestTemplateBuilder builder) {
 		return builder.build();
+	}
+	
+	@Bean
+	public MensajeriaService emailService() {
+		return new MensajeriaServiceImpl();
 	}
 }
