@@ -1,2 +1,4 @@
 -Added Spring Boot support
 -Added envPC properties file and Properties Bean initialization
+-Added Java EE API and EJB support
+-Added EJB implementation

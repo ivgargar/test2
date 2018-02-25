@@ -6,6 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.ClassPathResource;
 
+import com.mycorp.ejb.PortalClientesWebEJBRemoteBean;
+
+import portalclientesweb.ejb.interfaces.PortalClientesWebEJBRemote;
+
 @SpringBootApplication
 public class Application {
 	public static void main(String[] args) {
@@ -17,5 +21,10 @@ public class Application {
         PropertiesFactoryBean bean = new PropertiesFactoryBean();
         bean.setLocation(new ClassPathResource("envPC.properties"));
         return bean;
+    }
+    
+    @Bean
+    public PortalClientesWebEJBRemote portalclientesWebEJBRemote() {
+    		return new PortalClientesWebEJBRemoteBean();
     }
 }
