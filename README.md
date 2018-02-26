@@ -10,12 +10,4 @@ Added Rest Template support.
 
 Added Mensajeria Service implementation.
 
-To generate the jar for the project just run mvn package from the command line. This is thanks to the following lines added to the pom:
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-        </plugin>
-    </plugins>
-</build>
+To generate the jar for the project just add spring-boot-maven-plugin to the pom and run mvn package from the command line.
